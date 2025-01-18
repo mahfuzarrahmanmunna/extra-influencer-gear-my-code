@@ -3,10 +3,17 @@
 
 /* inter font style for webpage */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-* {
+body {
     margin: 0;
     padding: 0;
+}
+
+* {
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    border: none;
+    outline: none;
 }
 
 
@@ -117,6 +124,7 @@ nav ul li a {
 
 
 
+
 /* main section style */
 main > section {
     margin-bottom: 100px;
@@ -125,12 +133,12 @@ main > section {
 
 /* logo section style */
 .logo {
-    width: min(100% - 30px, 1110px);
+    width: min(100%, 1110px);
     margin-inline: auto;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
     align-items: center;
-    background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+    gap: 60px;
+    flex-wrap: wrap;
 }
 
 
@@ -172,18 +180,16 @@ main > section {
     font-weight: bold;
     color: var(--primary-desc-color);
 }
-.more-btn {
+.more {
     align-items: center;
-    color: rgba(224, 44, 109, 0.87);
-}
-.btn {
+    justify-content: right;
     color: var(--button-color);
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: var(--primary-poppins-font);
+    gap: 8px;
+    margin-top: 50px;
 }
-.see{
-    text-align: right;
-}
-
-
 
 
 
@@ -202,12 +208,17 @@ main > section {
     }
     .banner {
         flex-direction: column-reverse;
+        max-width: 440px;
     }
     .banner-picture {
-
+        width: 280px;
+    }
+    .banner-img {
+        width: 100%;
     }
     .banner-content {
         text-align: center;
+        width: 100%;
     }
     .banner-head {
         font-size: 1.75rem;
@@ -218,12 +229,22 @@ main > section {
     .btn-radius {
         margin: 0 auto;
     }
-    .logo, .card-container {
+    .card-container {
         grid-template-columns: 1fr;
         justify-content: center;
         align-items: center;
         gap: 24px;
         width: 100%;
-        margin: 5px;
+        margin: 8px;
+    }
+    .collection-container {
+        max-width: 380px;
+        align-items: center;
+    }
+    .logo {
+        margin-top: 50px;
+        gap: 20px;
+        /* max-width: 276px; */
+        height: 61px;
     }
 }
