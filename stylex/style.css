@@ -192,6 +192,14 @@ main > section {
 }
 
 
+/* Feaure section model */
+.feature {
+    justify-content: space-between;
+    align-items: center;
+    width: min(100%, 1110px);
+    margin-inline: auto;
+    gap: 96px;
+}
 
 
 
