@@ -308,8 +308,15 @@ main > section {
         margin: 8px;
     }
     .card {
-        max-width: 329px;
+        max-width: 370px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
     }
+    /* .star-icon {
+        display: flex;
+        flex-direction: column;
+    } */
     
     .collection-container {
         max-width: 380px;
