@@ -161,7 +161,6 @@ main > section {
     margin-inline: auto;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 .card {
     padding: 16px;
@@ -236,9 +235,6 @@ main > section {
 
 
 /*  footer style */
-.footer-icon {
-    
-}
 .footer-icon img {
     width: 32px;
     height: 32px;
@@ -311,9 +307,13 @@ main > section {
         width: 100%;
         margin: 8px;
     }
+    .card {
+        max-width: 329px;
+    }
+    
     .collection-container {
         max-width: 380px;
-        align-items: center;
+        justify-content: center;
     }
     .logo {
         margin-top: 50px;
@@ -324,7 +324,12 @@ main > section {
 
     .feature {
         flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
     } 
+    .feature-btn {
+        margin: 0 auto;
+    }
     .feature-desc {
         max-width: auto;
     }
