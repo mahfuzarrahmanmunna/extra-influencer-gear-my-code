@@ -3,6 +3,11 @@
 
 /* inter font style for webpage */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* manrope font style */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
 body {
     margin: 0;
     padding: 0;
@@ -231,14 +236,37 @@ main > section {
 
 
 /*  footer style */
+.footer-icon {
+    
+}
 .footer-icon img {
     width: 32px;
     height: 32px;
+    margin-left: 16px;
+    background-color: rgba(255, 255, 255, 0.747);
+    border-radius: 50%;
 }
 .footer-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 50px 0;
+    background-color: #0a0826;
+}
+.footer-head {
+    margin-bottom: 0 0 3px 0;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--primary-poppins-font);
+}
+.footer-desc {
+    font-family: "Manrope", serif;
+    margin: 3px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.875rem;
+
 }
 
 
