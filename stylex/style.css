@@ -361,4 +361,7 @@ main > section {
     .nav-title {
         padding-left: 0;
     }
+    .footer-container {
+        width: 100%;
+    }
 }
